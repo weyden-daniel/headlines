@@ -11,6 +11,18 @@
 	
 		<h1>Headlines</h1>		
 		
+		<h3>Please choose one of the available publications: "bbc", "cnn", "fox" or "iol".</h3>
+		
+		<form>
+		
+			<input type="text" name="publication" placeholder="bbc"></input>
+			
+			<input type="submit" value="Submit" />
+		
+		</form>
+		
+		<br />
+		
 		{% for article in articles %}
 			<b><a href="{{article.link}}">{{article.title}}</a></b><br /> 
 			<i>{{article.published}}</i><br />
